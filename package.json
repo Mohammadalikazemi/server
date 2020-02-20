@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Mohammadalikazemi/server/issues"
   },
-  "homepage": "https://github.com/Mohammadalikazemi/server#readme"
+  "homepage": "https://github.com/Mohammadalikazemi/server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.0"
+  }
 }
