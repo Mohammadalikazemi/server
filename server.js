@@ -24,7 +24,7 @@ hbs.registerHelper('date',()=>{
 app.use((req, res, next) => {
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     
-    const log = `Month : ${months[new Date().getMonth()]} ** URL : ${req.url} ** Method : ${req.method} \n`;
+    const log = `Month : ${months[new Date().getMonth()]} ** URL : ${req.url} ** Method : ${req.method}  ** System : ${platform()} ${arch()}\n`;
     appendFile('Server.log',log,(err)=>{
         if(err){
             console.log(err)
